@@ -5,20 +5,33 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <form>
+          <div className="input-1">
+            <input type="text" name="input-1" />
+            <input type="checkbox"  name="checkbox-1" />
+          </div>
+          <div className="input-2">
+            <input type="text" name="input-2" />
+            <input type="checkbox"  name="checkbox-2" />
+          </div>
+          <div className="input-3">
+            <input type="text" name="input-3" />
+            <input type="checkbox"  name="checkbox-3" />
+          </div>
+          <button className="btn_add">+</button>
+          <button className="btn_subtract">-</button>
+          <button className="btn_multiply">*</button>
+          <button className="btn_divide">/</button>
+        </form>
+      <hr />
+      <div className="error">Harap checklist 2 value!</div>
+      <div>
+        <div>Hasil:</div>
+        <div className="result">1</div>
+      </div>
+
+      </div>
     </div>
   );
 }
