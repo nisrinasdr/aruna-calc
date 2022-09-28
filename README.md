@@ -10,10 +10,10 @@ This project was Aruna's study case.
 ## File structure
 .src\
 -- assets                  # list of assets\
- image\             
+ image             
 -- App.tsx                 # Main page\
 -- App.css                 # Css for App\
--- App.test.tsx            # Unit test\
+-- App.test.tsx            # Unit test
 
 ## Links
 [Aruna Calc Demo](https://aruna-calc.netlify.app/).\
