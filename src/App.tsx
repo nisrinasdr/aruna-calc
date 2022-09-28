@@ -104,32 +104,32 @@ function App() {
           <div className="button-group">
             <button 
               className="btn_add" 
-              disabled={input.length < 2}
+              disabled={isChecked.length < 2}
               onClick={(e) => handleResult(e, "+")}
             >+
             </button>
             <button 
               className="btn_subtract" 
-              disabled={input.length < 2}
+              disabled={isChecked.length < 2}
               onClick={(e) => handleResult(e, "-")}
             >-
             </button>
             <button 
               className="btn_multiply" 
-              disabled={input.length < 2}
+              disabled={isChecked.length < 2}
               onClick={(e) => handleResult(e, "*")}
             >*
             </button>
             <button 
               className="btn_divide" 
-              disabled={input.length < 2}
+              disabled={isChecked.length < 2}
               onClick={(e) => handleResult(e, "/")}
             >/
             </button>
           </div>
         </form>
       <hr />
-      {input.length < 1 && <div className="warning">Checklist hanya bisa dilakukan setelah nilai tersedia!</div>}
+      {input.length < 3 && <div className="warning">Checklist hanya bisa dilakukan setelah nilai tersedia!</div>}
       {isChecked.length < 2 && <div className="error">Harap checklist 2 value!</div>}
       <div className="result">
         <div>Hasil:</div>

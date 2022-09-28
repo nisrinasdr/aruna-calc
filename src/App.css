@@ -43,6 +43,10 @@ input[type="checkbox"]{
   transform: translateY(-0.075em);
 }
 
+input[type="checkbox"]:disabled {
+  outline: 0.15em solid #ccc;
+}
+
 .button-group {
   width: 80%;
   display: flex;
@@ -56,6 +60,12 @@ button {
   padding: .2em;
   border: 2px solid #000;
   border-radius: .5em;
+}
+
+button:disabled {
+  border: 2px solid #ccc;
+  color: #ccc;
+  font-weight: 600;
 }
 
 hr {
